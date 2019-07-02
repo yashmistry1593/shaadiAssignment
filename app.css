@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background: #cb9092;
+    padding: 20px 60px;
+    display: flex;
+}
+
+.form-wrapper{
+    text-align: center;
+    padding-top: 70px;
+}
+.form-field{
+    margin-bottom: 12px;
+}
+.form-field:nth-child(3){
+   display: flex;
+   justify-content: center;
+}
+.form-field input{
+    border: 1px solid #cb9092;
+    border-radius: 20px;
+    padding: 6px 12px;
+    outline: none;
+}
+.spinner{
+    height: 40px
+}
+.spinner img{
+    height: 100%;
+}
+.error-message{
+   color: red
+}
+
+.filter-box{
+    text-align: center;
+    margin: 30px 0;
+}
+.filter-box select{
+    border: 2px solid #cb9092;
+    border-radius: 20px;
+    padding: 4px 9px;
+    color: #8c595a;
+    outline: none;
+    cursor: pointer;
+}
+
+.finish-button{
+    text-align: center;
+    padding-top: 40px;
+}
+.logout-btn{
+    text-align: right;
+    padding: 20px 40px 20px 0;
+}
+.finish-button button , .form-wrapper button , .logout-btn button{
+    border: 1px solid #cb9092;
+    padding: 8px 12px;
+    background: #cb9092;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 210px;
+}
+.carousel {
+    position: relative;
+}
+.carousel__slide {
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    max-width: 900px;
+    list-style-type: none;
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .carousel__slide {
+        padding-right: 60px;
+        padding-left: 60px;
+   }
+}
+.carousel__slide--active {
+    display: block;
+}
+.carousel-slide__content {
+    margin-bottom: 19px;
+    font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+
+.carousel-slide__author, .carousel-slide__source {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 14px;
+}
+
+.carousel-slide__source {
+    font-style: italic;
+    color: #888;
+}
+.carousel__arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    color: #111;
+    cursor: pointer;
+    opacity: 0.75;
+    transform: translateY(-50%);
+    transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+.carousel__arrow:focus {
+    outline: 0;
+}
+.carousel__arrow:hover {
+    opacity: 0.5;
+}
+.carousel__arrow--left {
+    left: 32px;
+}
+.carousel__arrow--right {
+    right: 32px;
+}
+.carousel__indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.carousel__indicators li:nth-of-type(n + 2) {
+    margin-left: 9px;
+}
+.carousel__indicator {
+    display: block;
+    width: 12px;
+    height:12px;
+    background-color: #111;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.15;
+    transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (max-width: 767px) {
+    .carousel__indicator {
+       height: 8px;
+       width: 8px;
+   }
+}
+
+.carousel__indicator:hover {
+    opacity: 0.5;
+}
+.carousel__indicator--active, .carousel__indicator--active:hover {
+    opacity: 0.75;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 10px 16px;
+    background-color: #cb9092;
+    color: white;
+  }
+  
+  .modal-body {
+      padding: 40px 20px;
+        text-align: center;
+        font-size: 18px
+    }
+
+  .show-modal{
+      display: block
+  }
+
+
+  
+@media (max-width: 768px) {
+    .carousel__indicator {
+       height: 8px;
+       width: 8px;
+   }
+   .logout-btn{
+    padding: 10px 20px 10px 0;
+   }
+   .filter-box {
+    margin: 15px 0;
+   }
+   .modal-header{
+       padding: 8px 10px;
+   }
+   .modal-header span{
+       font-size: 20px;
+   }
+   .modal-header h2{
+       font-size: 14px;
+   }
+   .modal-body{
+       font-size: 14px
+   }
+   header{
+       padding: 10px 22px;
+   }
+   .home-logo, .side-logo{
+       height: 30px;
+   }
+   .home-logo img, .side-logo img{
+        height: 100%;
+   }
+   .finish-button button, .form-wrapper button, .logout-btn button{
+       padding: 6px 10px;
+   }
+}

@@ -86,7 +86,7 @@ const Login = (props) => {
                 </div>
                 <div className="form-field">
                     <button type="submit">Submit</button>
-                    {isAdmin && <div className="spinner"><img src="/static-images/spinner.gif" ></img></div>}
+                    {isAdmin && <div className="spinner"><img src="./static-images/spinner.gif" ></img></div>}
                 </div>
                 <p className="error-message">{errorMessage} </p>
             </form>
